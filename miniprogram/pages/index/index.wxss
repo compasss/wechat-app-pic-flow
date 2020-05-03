@@ -1,10 +1,12 @@
 /**index.wxss**/
-
+page{
+  height: 100%;
+}
 .home-page{
-  padding: 0 20rpx;
   font-size: 32rpx;
 }
 .posts{
+  padding: 0 20rpx 20rpx 20rpx; 
   padding-bottom: 20rpx;
   border-bottom: 1rpx solid #E5E5E5;
 }

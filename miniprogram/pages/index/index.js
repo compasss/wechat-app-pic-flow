@@ -3,7 +3,7 @@ const app = getApp()
 
 Page({
   data: {
-    scrollViewHeight: 600,
+    scrollViewHeight: 300,
     postList: [],
     page: 1,
     pageSize: 10,
@@ -11,7 +11,7 @@ Page({
   },
 
   onLoad: function() {
-    this.calcHeight()
+    // this.calcHeight()
     this.getPostList('init')
     // 获取用户信息
     wx.getSetting({
@@ -42,8 +42,8 @@ Page({
     wx.cloud.callFunction({
       name: 'postList',
       data: {
-        page: this.data.page,
-        pageSize: this.data.pageSize
+        page: self.data.page,
+        pageSize: self.data.pageSize
       },
       success: function(res) {
         var result = []
@@ -63,7 +63,7 @@ Page({
       },
       fail: function(xhr) {
         console.log(xhr)
-        this.setData({
+        self.setData({
           lock: false
         })
       },
@@ -87,7 +87,8 @@ Page({
       })
     }
   },
-  scrollPage: function () {
+  onReachBottom: function () {
+    console.log('bottom')
     if (!this.data.lock && this.data.totalRecords > this.data.page * 10) {
       // 判断能不能加载数据
       this.setData({

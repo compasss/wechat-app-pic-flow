@@ -16,7 +16,6 @@ App({
     }
 
     const userInfo = wx.getStorageSync('userInfo')
-    console.log('user info', userInfo)
     if(!userInfo || !userInfo.openid) {
       wx.navigateTo({
         url: '/pages/login/login',

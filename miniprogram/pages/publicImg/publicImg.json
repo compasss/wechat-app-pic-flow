@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "upload-icon": "/components/UploadIcon/uploadIcon"
+  }
+}

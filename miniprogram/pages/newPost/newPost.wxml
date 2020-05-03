@@ -1,0 +1,16 @@
+<!--miniprogram/pages/newPost/newPost.wxml-->
+<view class="new-post">
+  <view class="text-area">
+    <textarea
+      value="{{content}}" bindinput="textInput" placeholder="请输入动态"
+    ></textarea>
+  </view>
+  <view class="selected-imgs">
+    <image wx:for="{{selectedImgList}}" wx:key="index" src="{{item}}" class="item"></image>
+    <view class="item upload-icon" hover-class="upload-icon-hover" catchtap="selectImgs" wx:if="{{selectedImgList.length<9}}">
+      <image src="../../images/upload-icon.png" class="icon"></image>
+    </view>
+  </view>
+
+  <button type="primary" bindtap="handlePublish" class="publish-btn">发布</button>
+</view>

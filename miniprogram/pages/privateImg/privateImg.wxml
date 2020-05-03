@@ -1,0 +1,15 @@
+<!--miniprogram/pages/privateImg/private.wxml-->
+<view class="public-imgs">
+  <scroll-view
+    scroll-y="true" style="height:{{scrollViewHeight}}px"
+    enable-back-to-top="true" bindscrolltolower="scrollPage" enable-back-to-top="true"
+  >
+    <view class="scroll-w" bindtap="viewImage">
+      <view wx:for="{{imgList}}" wx:key="index" class="item {{index%2===0?'left':'right'}}">
+        <image src="{{item.url}}" mode="aspectFit" lazy-load class="img" data-url="{{item.url}}"></image>
+      </view>
+    </view>
+  </scroll-view>
+
+  <upload-icon bind:onUpload="uploadImg"></upload-icon>
+</view>

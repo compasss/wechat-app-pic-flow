@@ -1,0 +1,23 @@
+<!--miniprogram/pages/publicImg/publicImg.wxml-->
+
+<view class="public-imgs">
+  <view class="posts">
+    <view class="top">
+      <image src="../../images/home-icon-yes.png" class="img"></image>
+      <text class="txt">那些年</text>
+    </view>
+    <view class="imgs"></view>
+    <view class="content"></view>
+  </view>
+  <scroll-view
+    scroll-y="true" style="height:{{scrollViewHeight}}px"
+    enable-back-to-top="true" bindscrolltolower="scrollPage" enable-back-to-top="true"
+  >
+    
+    <view class="scroll-w" bindtap="viewImage">
+      <view wx:for="{{imgList}}" wx:key="index" class="item {{index%2===0?'left':'right'}}">
+        <image src="{{item.url}}" mode="aspectFit" lazy-load class="img" data-url="{{item.url}}"></image>
+      </view>
+    </view>
+  </scroll-view>
+</view>

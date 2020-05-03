@@ -1,0 +1,22 @@
+/* miniprogram/pages/privateImg/private.wxss */
+
+.scroll-w{
+  display: flex;
+  flex-wrap: wrap;
+}
+.scroll-w .item{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #E5E5E5;
+  background-color: #FFF;
+}
+
+.scroll-w .img{
+  width: 100%;
+  display: block;
+}
+
+.scroll-w .left{
+  border-right: 1rpx solid #E5E5E5;
+}

@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="home-page">
+  <scroll-view
+    scroll-y="true" style="height:{{scrollViewHeight}}px"
+    enable-back-to-top="true" bindscrolltolower="scrollPage" enable-back-to-top="true"
+  >
+    <view class="posts" bindtap="viewImage" wx:for="{{postList}}" wx:key="index">
+      <view class="top">
+        <image src="{{item.avatar_url}}" class="img"></image>
+        <text class="txt">{{item.nick_name}}</text>
+      </view>
+      <view class="content">{{item.content}}</view>
+      <view class="imgs-content">
+        <image wx:for="{{item.imgList}}" wx:for-item="imgItem" wx:for-index="imgIndex" wx:key="imgIndex"
+          src="{{imgItem.url}}" class="item {{item.imgList.length>1?'':'single'}}" mode="scaleToFill" lazy-load data-url="{{imgItem.url}}"
+          data-index="{{index}}"
+        ></image>
+      </view>
+    </view>
+  </scroll-view>
+</view>

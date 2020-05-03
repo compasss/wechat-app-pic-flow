@@ -1,0 +1,6 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class="login-page">
+  <button
+    open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="primary"
+  >使用微信登陆</button>
+</view>

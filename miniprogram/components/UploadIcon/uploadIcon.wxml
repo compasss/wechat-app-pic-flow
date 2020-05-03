@@ -1,0 +1,4 @@
+<!--components/uploadIcon.wxml-->
+<view class="upload-icon" bindtap="uploadImg" hover-class="upload-icon-hover">
+  <image src="../../images/upload-icon.png" class="img"></image>
+</view>

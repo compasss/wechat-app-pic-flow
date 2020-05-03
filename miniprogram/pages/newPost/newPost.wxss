@@ -1,0 +1,35 @@
+/* miniprogram/pages/newPost/newPost.wxss */
+.text-area{
+  height: 250rpx;
+  border-bottom: 1rpx solid #E5E5E5;
+  margin-bottom: 10rpx;
+}
+.selected-imgs{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selected-imgs .item{
+  width: 33.333%;
+  height: 250rpx;
+}
+
+.upload-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E5E5;
+}
+
+.upload-icon .icon{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.upload-icon-hover{
+  opacity: 0.7;
+}
+
+.publish-btn{
+  margin-top: 100rpx;
+}

@@ -1,0 +1,4 @@
+/* miniprogram/pages/login/login.wxss */
+.login-page{
+  margin-top: 200rpx;
+}

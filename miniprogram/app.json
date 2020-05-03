@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/publicImg/publicImg",
+    "pages/privateImg/privateImg",
+    "pages/newPost/newPost",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundColor": "#14ae67",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#14ae67",
+    "navigationBarTitleText": "美图",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "list": [
+      {
+        "text": "主页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home-icon-no.png",
+        "selectedIconPath": "images/home-icon-yes.png"
+      },
+      {
+        "text": "上传",
+        "pagePath": "pages/newPost/newPost",
+        "iconPath": "images/add-icon-no.png",
+        "selectedIconPath": "images/add-icon-yes.png"
+      },
+      {
+        "text": "个人",
+        "pagePath": "pages/privateImg/privateImg",
+        "iconPath": "images/person-icon-no.png",
+        "selectedIconPath": "images/person-icon-yes.png"
+      }
+    ]
+  }
+}

@@ -42,7 +42,7 @@ exports.main = async (event, context) => {
       public: true
     })
     .sort({
-      'create_time': 1
+      'create_time': -1
     })
     .skip(skipNumber)
     .limit(pageSize)

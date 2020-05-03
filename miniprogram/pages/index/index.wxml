@@ -12,7 +12,7 @@
       <view class="content">{{item.content}}</view>
       <view class="imgs-content">
         <image wx:for="{{item.imgList}}" wx:for-item="imgItem" wx:for-index="imgIndex" wx:key="imgIndex"
-          src="{{imgItem.url}}" class="item {{item.imgList.length>1?'':'single'}}" mode="scaleToFill" lazy-load data-url="{{imgItem.url}}"
+          src="{{imgItem.url}}" class="item {{item.imgList.length>1?'':'single'}}" mode="aspectFill" lazy-load data-url="{{imgItem.url}}"
           data-index="{{index}}"
         ></image>
       </view>

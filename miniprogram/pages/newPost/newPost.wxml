@@ -2,7 +2,7 @@
 <view class="new-post">
   <view class="text-area">
     <textarea
-      value="{{content}}" bindinput="textInput" placeholder="请输入动态"
+      value="{{content}}" bindinput="textInput" placeholder="请输入动态" class="content"
     ></textarea>
   </view>
   <view class="selected-imgs">

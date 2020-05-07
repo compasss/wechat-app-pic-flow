@@ -1,8 +1,11 @@
 /* miniprogram/pages/newPost/newPost.wxss */
 .text-area{
-  height: 250rpx;
   border-bottom: 1rpx solid #E5E5E5;
   margin-bottom: 10rpx;
+}
+.text-area .content{
+  width: 100%;
+  height: 200rpx;
 }
 .selected-imgs{
   display: flex;

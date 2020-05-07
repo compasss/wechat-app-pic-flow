@@ -30,7 +30,7 @@ Page({
       success: chooseResult => {
         console.log(chooseResult)
         self.setData({
-          selectedImgList: [...chooseResult.tempFilePaths, ...this.data.selectedImgList]
+          selectedImgList: [...this.data.selectedImgList, ...chooseResult.tempFilePaths]
         })
       }
     })

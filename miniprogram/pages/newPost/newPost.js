@@ -115,12 +115,6 @@ Page({
    * 发布图片
    */
   handlePublish: function () {
-    if(!this.data.content) {
-      wx.showToast({
-        title: '请输入内容',
-      })
-      return false;
-    }
     if(this.data.selectedImgList.length) {
       this.uploadOneByOne(this.data.selectedImgList, 0, 0, 1)
     } else {
